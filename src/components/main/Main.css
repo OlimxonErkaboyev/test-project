@@ -1,0 +1,364 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+.main-start {
+  width: 200px;
+  background: #fff;
+  box-shadow: -1px 0px 16px 0px rgba(0, 0, 0, 0.06);
+}
+.main-end {
+  min-width: 1240px;
+  height: 94vh;
+  width: 100%;
+  padding-top: 20px;
+  padding-right: 32px;
+  padding-bottom: 12px;
+  padding-left: 32px;
+  background: #f0f0f0;
+}
+
+.main-end__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.main-end-zayavki-num {
+  color: #6d7471;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.main-end__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow-x: auto;
+  gap: 24px;
+}
+
+.main-end__new-list {
+  position: relative;
+  min-width: 295px;
+  width: 100%;
+  border-radius: 4px;
+  max-height: 80vh;
+  border: 1px solid #c9d2ce;
+  overflow: auto;
+}
+
+.new-list__card-body {
+  min-height: 444px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  gap: 12px;
+}
+
+.main-end__new-list__bow {
+  background-image: url("../../assets/images/list-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.new-list__card {
+  position: sticky;
+  top: 0;
+  z-index: 111;
+  width: 100%;
+  border-bottom: 1px solid var(--BW-20, #c9d2ce);
+  border-radius: 3px 3px 0px 0px;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 9px;
+  background: #f2faf6;
+}
+
+.main-end__new-list-title {
+  width: 100%;
+  margin: 0;
+  color: #414644;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.main-end__new-item {
+  width: 258px;
+  height: 132px;
+  padding: 12px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.15) inset,
+    0px 2px 0px 0px rgba(0, 0, 0, 0.05) inset;
+}
+.new-item__title {
+  width: 186px;
+  flex-shrink: 0;
+  color: #181a19;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.new-item__desc {
+  width: 186px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #6d7471;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.new-item__res {
+  width: 186px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-item__badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #f6f2ff;
+  color: #856ec6;
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.new-item__users {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 35px;
+  position: relative;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #ebf3ef;
+  background: #fafffc;
+  color: #414644;
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.new-item__users::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url("../../assets//icons/tabler_users.svg");
+  background-repeat: no-repeat;
+  right: 12px;
+  bottom: 4px;
+}
+.new-item__docs {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 47px;
+  position: relative;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #ebf3ef;
+  background: #fafffc;
+  color: #414644;
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.new-item__docs::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url("../../assets//icons/tabler_file-description.svg");
+  background-repeat: no-repeat;
+  right: 25px;
+  bottom: 4px;
+}
+
+.new-item__user {
+  width: 186px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-item__user-kasbi {
+  width: 150px;
+  margin-top: 0;
+  margin-bottom: 2px;
+  color: #969f9b;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.new-item__user-name {
+  width: 150px;
+  color: #414644;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+/* <ul className='main-end__new-list'>
+                <div className='new-list__card'>
+                  <h3 className='main-end__new-list-title'>Новые • 4</h3>
+                </div>
+                <li className='main-end__new-item'>
+                  <div className='new-item-wrapper'>
+                    <h3 className='new-item__title'>UI/UX дизайнер</h3>
+                    <p className='new-item__desc'>
+                      Отдел разработки мобильного приложения
+                    </p>
+                    <div className='new-item__res'>
+                      <span className='new-item__badge'>В приоритете</span>
+                      <span className='new-item__users'>3</span>
+                      <span className='new-item__docs'>255</span>
+                    </div>
+                    <div className='new-item__user'>
+                      <img src={user} alt='User' />
+                      <div className='new-item__user-text'>
+                        <p className='new-item__user-kasbi'>Рекруитер</p>
+                        <p className='new-item__user-name'>Алексей Щербаков</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li className='main-end__new-item'>
+                  <div className='new-item-wrapper'>
+                    <h3 className='new-item__title'>UI/UX дизайнер</h3>
+                    <p className='new-item__desc'>
+                      Отдел разработки мобильного приложения
+                    </p>
+                    <div className='new-item__res'>
+                      <span className='new-item__badge'>В приоритете</span>
+                      <span className='new-item__users'>3</span>
+                      <span className='new-item__docs'>255</span>
+                    </div>
+                    <div className='new-item__user'>
+                      <img src={user} alt='User' />
+                      <div className='new-item__user-text'>
+                        <p className='new-item__user-kasbi'>Рекруитер</p>
+                        <p className='new-item__user-name'>Алексей Щербаков</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li className='main-end__new-item'>
+                  <div className='new-item-wrapper'>
+                    <h3 className='new-item__title'>UI/UX дизайнер</h3>
+                    <p className='new-item__desc'>
+                      Отдел разработки мобильного приложения
+                    </p>
+                    <div className='new-item__res'>
+                      <span className='new-item__badge'>В приоритете</span>
+                      <span className='new-item__users'>3</span>
+                      <span className='new-item__docs'>255</span>
+                    </div>
+                    <div className='new-item__user'>
+                      <img src={user} alt='User' />
+                      <div className='new-item__user-text'>
+                        <p className='new-item__user-kasbi'>Рекруитер</p>
+                        <p className='new-item__user-name'>Алексей Щербаков</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li className='main-end__new-item'>
+                  <div className='new-item-wrapper'>
+                    <h3 className='new-item__title'>UI/UX дизайнер</h3>
+                    <p className='new-item__desc'>
+                      Отдел разработки мобильного приложения
+                    </p>
+                    <div className='new-item__res'>
+                      <span className='new-item__badge'>В приоритете</span>
+                      <span className='new-item__users'>3</span>
+                      <span className='new-item__docs'>255</span>
+                    </div>
+                    <div className='new-item__user'>
+                      <img src={user} alt='User' />
+                      <div className='new-item__user-text'>
+                        <p className='new-item__user-kasbi'>Рекруитер</p>
+                        <p className='new-item__user-name'>Алексей Щербаков</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li className='main-end__new-item'>
+                  <div className='new-item-wrapper'>
+                    <h3 className='new-item__title'>UI/UX дизайнер</h3>
+                    <p className='new-item__desc'>
+                      Отдел разработки мобильного приложения
+                    </p>
+                    <div className='new-item__res'>
+                      <span className='new-item__badge'>В приоритете</span>
+                      <span className='new-item__users'>3</span>
+                      <span className='new-item__docs'>255</span>
+                    </div>
+                    <div className='new-item__user'>
+                      <img src={user} alt='User' />
+                      <div className='new-item__user-text'>
+                        <p className='new-item__user-kasbi'>Рекруитер</p>
+                        <p className='new-item__user-name'>Алексей Щербаков</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li className='main-end__new-item'>
+                  <div className='new-item-wrapper'>
+                    <h3 className='new-item__title'>UI/UX дизайнер</h3>
+                    <p className='new-item__desc'>
+                      Отдел разработки мобильного приложения
+                    </p>
+                    <div className='new-item__res'>
+                      <span className='new-item__badge'>В приоритете</span>
+                      <span className='new-item__users'>3</span>
+                      <span className='new-item__docs'>255</span>
+                    </div>
+                    <div className='new-item__user'>
+                      <img src={user} alt='User' />
+                      <div className='new-item__user-text'>
+                        <p className='new-item__user-kasbi'>Рекруитер</p>
+                        <p className='new-item__user-name'>Алексей Щербаков</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul> */
